@@ -1,0 +1,101 @@
+
+1.Write a blog on Difference between HTTP1.1 vs HTTP2?
+ 
+Answer:
+ HTTP1.1
+It works on texual format.
+There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+It uses requests resource Inlining for use getting multiple pages
+It compresses data by itself. 
+HTTP2 
+1.It works on the binary protocol. 
+2.It allows multiplexing so one TCP connection is required for multiple requests.
+ 3.It uses PUSH frame by server that collects all multiple pages 
+4.It uses HPACK for data compression.
+
+
+2.Write a blog about objects and its internal representation in Javascript 
+
+Answer:
+Objects are important data types in javascript. Objects are different than primitive datatypes (i.e. number, string, boolean, etc.). Primitive data types contain one value but Objects can hold many values in form of Key: value pair. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+Every object has some property associated with some value. These values can be accessed using these properties associated with them.
+
+var myCar = new Object();
+
+myCar.make = 'Suzuki';
+
+myCar.model = 'Altros';
+
+myCar.year = 1978;
+
+myCar.wheels = 2;
+
+After creating myCar object, the value inside the object can be accessed using keys.
+
+i.e.
+
+myCar.year
+
+Output: 1978
+
+These values can be accessed using brackets notation also.
+
+myCar[year]
+
+Output: 1978
+
+The syntax for adding a property to an object is :
+
+ObjectName.ObjectProperty = propertyValue;
+
+The syntax for deleting a property from an object is:
+
+delete ObjectName.ObjectProperty;
+
+The syntax to access a property from an object is:
+
+objectName.property        
+           //or
+objectName["property”]     
+           //or
+objectName[expression]   
+
+So, conclusion and simple definition for Java Script properties is “Properties are the values associated with a JavaScript object”.
+
+Create JavaScript Object with Object Literal
+
+One of easiest way to create a javascript object is object literal, simply define the property and values inside curly braces as shown below
+
+let bike = {name: 'SuperSport', maker:'Ducati', engine:'937cc'};
+
+Using the JavaScript Keyword new
+
+The following example also creates a new JavaScript object with four properties:
+var person = new Object();
+person.firstName = “John”;
+person.lastName = “Doe”;
+person.age = 50;
+person.eyeColor = “blue”;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
